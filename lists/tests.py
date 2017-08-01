@@ -34,7 +34,7 @@ class HomePageTest(TestCase):
         self.assertEqual(response.status_code, 302)
         self.assertEqual(response['location'], '/lists/the-only-list-in-the-world/')'''
 
-    def test_home_page_return_correct_html(self):
+    '''def test_home_page_return_correct_html(self):
         # request = HttpRequest()
         # response = home_page(request)
         response = self.client.get('/')
@@ -42,9 +42,9 @@ class HomePageTest(TestCase):
         self.assertTrue(html.startswith('<html>'))
         self.assertIn('<title>Start a new To-do list</title>', html)
         self.assertTrue(html.strip().endswith('</html>'))
-        '''expected_html = render_to_string('home.html')
-        self.assertEqual(html, expected_html)'''
-        self.assertTemplateUsed(response, 'home.html')
+        expected_html = render_to_string('home.html')
+        self.assertEqual(html, expected_html)
+        self.assertTemplateUsed(response, 'home.html')'''
 
     def test_only_saves_items_when_necessary(self):
         self.client.get('/')
