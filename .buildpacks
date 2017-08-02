@@ -1,4 +1,3 @@
 https://github.com/ryandotsmith/nginx-buildpack.git
 https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/ruby.tgz
-https://github.com/heroku/heroku-buildpack-nodejs.git
 https://github.com/heroku/heroku-buildpack-nginx.git
