@@ -1,3 +1,2 @@
-web: gunicorn superlists.wsgi
-web: bin/start-nginx gunicorn -c config/gunicorn.py
-web: bin/start-nginx bundle exec unicorn -c config/unicorn.rb
+web: gunicorn superlists.wsgiwh
+web: bin/start-nginx bin/start-pgbouncer-stunnel gunicorn -c config/gunicorn.py superlists.wsgi:application

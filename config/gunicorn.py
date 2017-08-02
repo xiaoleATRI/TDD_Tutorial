@@ -1,6 +1,6 @@
-import os
+def when_ready(server):
+    # touch app-initialized when ready
+    open('/tmp/app-initialized', 'w').close()
 
-bind = os.environ['PORT']
-
-if bind.startswith('/'):
-    bind = 'unix:' + bind
+bind = 'unix:///tmp/nginx.socket'
+workers = 4
