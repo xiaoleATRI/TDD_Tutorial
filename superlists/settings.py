@@ -84,9 +84,6 @@ DATABASES = {
         'NAME': 'xiaole',
         'USER': 'xiaole',
         'PASSWORD': 'Besthuaihua@22',
-        'TEST': {
-            'NAME': 'test_xl',
-        },
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -120,6 +117,12 @@ USE_TZ = True
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+TEST_DATABASES = {
+    'default': dj_database_url.config(env='TEST_DATABASE_URL')
+}
+
+# add test running class
+TEST_RUNNER = 'config.test_suite.runner.HerokuTestSuiteRunner'
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
