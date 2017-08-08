@@ -11,7 +11,7 @@ env:
 install: pip install -r requirements.txt
 before_script:
   - psql -c "CREATE DATABASE xiaole;" -U postgres
-  - psql -c "CREATE USER xiaole WITH PASSWORD 'Besthuaihua@22';" -U postgres
+  - psql -c "CREATE USER xiaole WITH CREATEUSER PASSWORD 'Besthuaihua@22';" -U postgres
 script:
 - python manage.py test lists/
 deploy:
