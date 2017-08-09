@@ -19,6 +19,9 @@ install: pip install -r requirements.txt
 before_script:
   - psql -c "CREATE DATABASE xiaole;" -U postgres
   - psql -c "CREATE USER xiaole WITH CREATEUSER PASSWORD 'Besthuaihua@22';" -U postgres
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
 script:
   - python manage.py migrate
   - python manage.py test lists/

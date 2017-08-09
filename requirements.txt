@@ -1,9 +1,11 @@
 appnope==0.1.0
+bash-kernel==0.7
 bleach==2.0.0
 decorator==4.1.2
 dj-database-url==0.4.2
 Django==1.11.3
 django-extensions==1.8.1
+EasyProcess==0.2.3
 entrypoints==0.2.3
 gunicorn==19.7.1
 html5lib==0.999999999
@@ -41,6 +43,7 @@ terminado==0.6
 testpath==0.3.1
 tornado==4.5.1
 traitlets==4.3.2
+update==0.4.4
 virtualenv==15.1.0
 wcwidth==0.1.7
 webencodings==0.5.1
