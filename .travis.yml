@@ -44,4 +44,4 @@ deploy:
   app: tddtraining
   on:
     repo: xiaoleATRI/TDD_Tutorial
-    branch: setup_with_travis
+    branch: lx_ICTRAINING-21_tdd
