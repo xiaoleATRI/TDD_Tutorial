@@ -35,7 +35,8 @@ deploy:
   api_key:
     secure: qLJSp2ZQo2xyJnZD9b92Zm9x2EdudSBzD2JoVgYwnCpOIdLoUubF2ggKxxebH3/cpnaa78jzfRTpBDVkGHHhudlfwC0cA8MzC939oXAGBhV+c7JhS8/LkbKLSXq0Df+IsbD2F+MHA5bdwNwxoUSJ0Y4NOIbRHVKWxA5My6zeA/nBNojeFToDVxi+O7jyYrwc899fn0I95dZJoXK74l2QPJCEmGcsDbjBsC/6/uqZvRz2f/kkLKqaZofhZ6g+5d0yRABlig4KJNaXMyObarQcbyT2FqEdjY+KU4j44phnaIhWwFLgCdsHoFLjokeb1esW9fkIrlI9OdMEKraKTSUwde2zNtwXAMNa03gsy/xACyYAxl3wgfX9aANqxo57tFWvk9tsHPstvsgPYf0Ws7OVzbJf0DCkVGnmGuxiNNLqk3t+pynH235exk+Yq64aALdCCED0f7EPZKnicaUmMqLg9e4/6F9xQw7QTZkiboqw5yMApcEv1DZ9knXhX682MwODhW1MBAZlx1opo56JlT1QEQ/GhljTrFobQ9EHbzb00yM57aTr/bxc8whRwIKXjuOmmLXiI0WT67TxnJnPkBmJeW+pJof2T5DBCOYfnFa+12mB/zIVdyduOmbJYn6dwwfVsu4Po1oRt0ikCY0+yLnR1hWHIchmSod40FMEE+To878=
   strategy: git
-  app: tddtraining
+  app:
+    master: tddtraining
   on:
     repo: xiaoleATRI/TDD_Tutorial
-    branch: master
+    branch: setup_with_travis
