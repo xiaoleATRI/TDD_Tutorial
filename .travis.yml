@@ -15,7 +15,9 @@ before_install:
   - mkdir geckodriver
   - tar -xzf geckodriver-v0.18.0-linux64.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
-install: pip install -r requirements.txt
+install:
+  - pip install -r requirements.txt
+  - pip install coveralls
 before_script:
   - psql -c "CREATE DATABASE xiaole;" -U postgres
   - psql -c "CREATE USER xiaole WITH CREATEUSER PASSWORD 'Besthuaihua@22';" -U postgres
@@ -26,6 +28,10 @@ script:
   - python manage.py migrate
   - python manage.py test lists/
   - python manage.py test functional_tests/
+  - coverage run test lists/
+  - coverage run test lfunctional_tests/
+after_success:
+  coveralls
 before_deploy: "echo 'ready?'"
 deploy:
   provider: heroku
