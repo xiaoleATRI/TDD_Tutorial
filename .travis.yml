@@ -15,11 +15,11 @@ before_script:
 script:
   - python manage.py migrate
   - python manage.py test lists/
-  - python manage.py test functional_test/
+  - python manage.py test functional_tests/
 before_deploy: "echo 'ready?'"
 deploy:
   provider: heroku
-  buildpack: 
+  buildpack:
     - python
     - https://github.com/agriffis/nginx-buildpack.git
   api_key:
