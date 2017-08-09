@@ -29,7 +29,7 @@ script:
   # python manage.py test lists/
   # python manage.py test functional_tests/
   - coverage run manage.py test lists/
-  - coverage run manage.py test lfunctional_tests/
+  - coverage run manage.py test functional_tests/
 after_success:
   coveralls
 before_deploy: "echo 'ready?'"
