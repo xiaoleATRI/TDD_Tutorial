@@ -28,8 +28,8 @@ script:
   # python manage.py migrate
   # python manage.py test lists/
   # python manage.py test functional_tests/
-  - coverage run --source=./ manage.py test lists/
-  - coverage run --source=./ manage.py test functional_tests/
+  # - coverage run --source=./ manage.py test lists/
+  - coverage run --source=./ manage.py test
 after_success:
   coveralls
 before_deploy: "echo 'ready?'"
