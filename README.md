@@ -52,13 +52,5 @@ Just update `runtime.txt` to `python-2.7.13` (no trailing spaces or newlines!).
 - [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
 - [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
 
-[![Coverage Status](https://coveralls.io/repos/github/xiaoleATRI/TDD_Tutorial/badge.svg?branch=setup_with_travis)](https://coveralls.io/github/xiaoleATRI/TDD_Tutorial?branch=setup_with_travis)
-
-https://coveralls.io/repos/github/xiaoleATRI/TDD_Tutorial/badge.svg?branch=setup_with_travis(Coverage Status)!:https://coveralls.io/github/xiaoleATRI/TDD_Tutorial?branch=setup_with_travis
-
-{<img src="https://coveralls.io/repos/github/xiaoleATRI/TDD_Tutorial/badge.svg?branch=setup_with_travis" alt="Coverage Status" />}[https://coveralls.io/github/xiaoleATRI/TDD_Tutorial?branch=setup_with_travis]
-
-<a href='https://coveralls.io/github/xiaoleATRI/TDD_Tutorial?branch=setup_with_travis'><img src='https://coveralls.io/repos/github/xiaoleATRI/TDD_Tutorial/badge.svg?branch=setup_with_travis' alt='Coverage Status' /></a>
-
-.. image:: https://coveralls.io/repos/github/xiaoleATRI/TDD_Tutorial/badge.svg?branch=setup_with_travis
-:target: https://coveralls.io/github/xiaoleATRI/TDD_Tutorial?branch=setup_with_travis
+## Coverage
+[![Coverage Status](https://coveralls.io/repos/github/xiaoleATRI/TDD_Tutorial/badge.svg?branch=lx_ICTRAINING-21_tdd)](https://coveralls.io/github/xiaoleATRI/TDD_Tutorial?branch=lx_ICTRAINING-21_tdd)
