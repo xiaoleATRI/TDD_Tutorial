@@ -29,7 +29,7 @@ script:
   # python manage.py test lists/
   # python manage.py test functional_tests/
   # - coverage run --source=./ manage.py test lists/
-  - coverage run --source=./ manage.py test
+  - coverage run --source=./ --omit=*/migrations/*,lists/apps.py,lists/__init__.py,manage.py,functional_tests/__init__.py, manage.py test
 after_success:
   coveralls
 before_deploy: "echo 'ready?'"
