@@ -1,5 +1,7 @@
 appnope==0.1.0
 bash-kernel==0.7
+behave==1.2.5
+behave-django==0.5.0
 bleach==2.0.0
 decorator==4.1.2
 dj-database-url==0.4.2
@@ -26,6 +28,8 @@ nbconvert==5.2.1
 nbformat==4.3.0
 notebook==5.0.0
 pandocfilters==1.4.1
+parse==1.8.2
+parse-type==0.3.4
 pexpect==4.2.1
 pickleshare==0.7.4
 prompt-toolkit==1.0.15
