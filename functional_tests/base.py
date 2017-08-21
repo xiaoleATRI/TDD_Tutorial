@@ -7,6 +7,13 @@ import os
 
 MAX_WAIT = 10
 
+desired_cap = {
+    'platform': "Mac OS X 10.9",
+    'browserName': "chrome",
+    'version': "31",
+    'build': "build-1234",
+}
+
 
 def wait(fn):
     def modified_fn(*args, **kwargs):
@@ -23,7 +30,11 @@ def wait(fn):
 
 class FunctionalTest(StaticLiveServerTestCase):
     def setUp(self):
+        # test on saurce lab
         self.browser = webdriver.Firefox()
+        # self.browser = webdriver.Remote(
+        #     command_executor="http://xiaoleATRI:48d14f57-6c67-45cb-8775-f28c7fe7e56f@ondemand.saucelabs.com:80/wd/hub",
+        #     desired_capabilities=desired_cap)
         staging_server = os.environ.get('STAGING_SERVER')
         if staging_server:
             self.live_server_url = 'http://' + staging_server
