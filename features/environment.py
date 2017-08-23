@@ -1,4 +1,6 @@
 from selenium import webdriver
+# from .steps.actionwords import Actionwords
+from steps.actionwords import Actionwords
 
 
 def before_all(context):
@@ -20,3 +22,7 @@ def after_all(context):
 
 def before_feature(context, feature):
     pass
+
+
+def before_scenario(context, scenario):
+    context.actionwords = Actionwords(context)

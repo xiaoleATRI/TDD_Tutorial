@@ -18,6 +18,7 @@ before_install:
   - mkdir geckodriver
   - tar -xzf geckodriver-v0.18.0-linux64.tar.gz -C geckodriver
   - export PATH=$PATH:$PWD/geckodriver
+  - gem install hiptest-publisher
 install:
   - pip install -r requirements.txt
   - pip install coveralls
@@ -27,12 +28,16 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
+  - hiptest-publisher --config-file hiptest-publisher.config --test-run-id 100559 --without=actionwords #regenerate test files up to date
 script:
   # python manage.py migrate
   # python manage.py test lists/
   # python manage.py test functional_tests/
   # - coverage run --source=./ manage.py test lists/
   - coverage run --source=./ --omit=*/migrations/*,lists/apps.py,lists/__init__.py,manage.py,functional_tests/__init__.py,superlists/wsgi.py, manage.py test
+  - python manage.py behave --junit --junit-directory results/
+after_script:
+  - hiptest-publisher --config-file hiptest-publisher.config --push results/*.xml --push-format junit
 after_success:
   coveralls
 before_deploy: "echo 'ready?'"

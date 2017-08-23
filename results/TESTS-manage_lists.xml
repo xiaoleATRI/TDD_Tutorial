@@ -1,0 +1,55 @@
+<testsuite errors="0" failures="1" name="manage_lists.Manage Lists" skipped="0" tests="4" time="22.366063"><testcase classname="manage_lists.Manage Lists" name="Create two lists and see them on the My Lists page" status="failed" time="22.366063"><failure message="'1: Buy milk' != '1: Reticulate Splines'&#10;- 1: Buy milk&#10;+ 1: Reticulate Splines&#10;" type="AssertionError">
+<![CDATA[
+Failing step: Then I will be on the "Reticulate Splines" list page ... failed in 10.417s
+Location: features/manage_lists.feature:16
+Assertion Failed: '1: Buy milk' != '1: Reticulate Splines'
+- 1: Buy milk
++ 1: Reticulate Splines
+
+Captured logging:
+WARNING:django.request:Not Found: /404_no_such_url/
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Create two lists and see them on the My Lists page
+    Given I am a logged-in user ... passed in 0.105s
+    When I create a list with first item "Reticulate Splines" ... passed in 0.779s
+    And I add an item "Immanentize Eschaton" ... passed in 5.347s
+    And I create a list with first item "Buy milk" ... passed in 5.717s
+    Then I will see a link to "My lists" ... passed in 0.000s
+    When I click the link to "My lists" ... passed in 0.000s
+    Then I will see a link to "Reticulate Splines" ... passed in 0.000s
+    And I will see a link to "Buy milk" ... passed in 0.000s
+    When I click the link to "Reticulate Splines" ... passed in 0.000s
+    Then I will be on the "Reticulate Splines" list page ... failed in 10.417s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="manage_lists.Manage Lists" name="Add items to existing list" status="passed" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Add items to existing list
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="manage_lists.Manage Lists" name="Delete items from specific list" status="passed" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Delete items from specific list
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="manage_lists.Manage Lists" name="Update items in specific list" status="passed" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Update items in specific list
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

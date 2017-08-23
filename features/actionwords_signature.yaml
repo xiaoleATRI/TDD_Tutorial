@@ -1,0 +1,78 @@
+---
+- name: I logged in as administrator
+  uid: 96dddd4c-6098-4108-9c05-88ee55c9fb83
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I choose one user
+  uid: 43eaa428-87b2-4ddb-8fe8-136874518af6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I update its permission that this user can only read list
+  uid: 9eeac785-b2b8-4309-9dab-dc8e2c1eb4e6
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I logged out
+  uid: 48125f60-c2f7-4dcd-afe4-da7c7efab77e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: logged in with updated user account
+  uid: 513e9089-7aba-405c-968d-4b7d1e4b8789
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: 'this user can only view list '
+  uid: 53030639-44cf-493f-a9fc-2961380366a0
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: this user can not create item
+  uid: ddec39c0-fe3a-4ec1-ab1c-dd7a76ea53f4
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: this user can not update item
+  uid: 974f0934-7700-4f2d-aa35-32cc8582f169
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: this user can not delete item
+  uid: b5b62935-015f-4be4-aa7d-77ac22a72105
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: this user can not update list
+  uid: 342bcbcc-8729-486e-af67-8964f86e0228
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: this user can not delete list
+  uid: 603b688f-7a7a-42d2-b543-ff0b0e8b9571
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I am a logged-in user
+  uid: f584aab2-ce07-44f5-bb7e-a3907571ae07
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I add an item "p1"
+  uid: ef3fc6c1-3816-488d-9b96-99d974b0559a
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I create a list with first item "p1"
+  uid: 11031903-f59f-44af-b32c-041bb2a4653b
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I will see a link to "p1"
+  uid: 908e8c38-198c-49f4-958c-a60c309e9abb
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I click the link to "p1"
+  uid: f565d916-5a40-4073-8230-d11929d8750d
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I will be on the "p1" list page
+  uid: 2aac4b09-aec2-4a29-b048-e6226d5f7489
+  parameters:
+  - name: p1
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: this user can not create list
+  uid: d1684926-c069-45c7-88bd-74715fd0b11a
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
