@@ -9,7 +9,7 @@ env:
   matrix:
   - DJANGO=1.11.3 DB=postgresql
 addons:
-#  firefox: "54.0.1"
+  firefox: "54.0.1"
   sauce_connect:
     username: "xiaoleATRI"
     access_key: "48d14f57-6c67-45cb-8775-f28c7fe7e56f"
