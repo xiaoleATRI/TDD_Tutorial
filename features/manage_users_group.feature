@@ -1,9 +1,11 @@
+@type-root @type-users
 Feature: Manage Users Group
     **As** an Administrator
     **I want to** to be able to delete users and update permissions of users
     **So I can** manage users group
 
 
+  @priority-1
   Scenario Outline: Update permissions of users
     # **As** an Administrator
     # **I want to** to be able to delete users and update permissions of users
@@ -26,5 +28,6 @@ Feature: Manage Users Group
       | username | password | hiptest-uid |
       | admin | admin |  |
 
+  @priority-2
   Scenario: Delete users
     Given I logged in as administrator

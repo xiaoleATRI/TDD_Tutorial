@@ -1,8 +1,10 @@
+@type-root @type-lists
 Feature: Manage Lists
     **As** a logged-in user
     **I want to**  be able to see all my lists in one page
     **So that** I can find them all after I've written them
 
+  @priority-1
   Scenario: Create two lists and see them on the My Lists page
     Given I am a logged-in user
     When I create a list with first item "Reticulate Splines"

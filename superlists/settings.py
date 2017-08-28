@@ -124,6 +124,11 @@ TEST_DATABASES = {
 
 # add test running class
 # TEST_RUNNER = 'test_suite_runner.HerokuTestSuiteRunner'
+TEST_RUNNER = 'xmlrunner.extra.djangotestrunner.XMLTestRunner'
+
+TEST_OUTPUT_DIR = os.path.abspath(os.path.join(BASE_DIR, 'results'))
+
+TEST_OUTPUT_FILE_NAME = 'TEST_unit_test.xml'
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 

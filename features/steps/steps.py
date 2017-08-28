@@ -97,3 +97,18 @@ def impl(context, p1 = ""):
 @then(r'this user can not create list')
 def impl(context):
     context.actionwords.this_user_can_not_create_list()
+
+
+@given(r'I use the current directory as working directory')
+def impl(context):
+    context.actionwords.i_use_the_current_directory_as_working_directory()
+
+
+@when(r'I run "(.*)"')
+def impl(context, p1 = "", datatable = "||"):
+    context.actionwords.i_run_p1(p1, context.table)
+
+
+@then(r'it should pass')
+def impl(context):
+    context.actionwords.it_should_pass()

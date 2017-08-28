@@ -76,3 +76,17 @@
   uid: d1684926-c069-45c7-88bd-74715fd0b11a
   parameters: []
   body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I use the current directory as working directory
+  uid: f6d85fed-be05-422b-acda-2bc42d840251
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I run "p1"
+  uid: aa30de13-023e-4a00-a351-7faab05fdfea
+  parameters:
+  - name: p1
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: it should pass
+  uid: 40b7a597-bebe-473f-8f8b-53f14a4855b8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
